@@ -21,7 +21,7 @@ public class mobileRotation : MonoBehaviour
         if (dataset)
         {
             
-             gameObject.transform.localRotation = gameObject.transform.localRotation * Quaternion.AngleAxis(joystick.Horizontal * 0.5f, Vector3.up);
+             gameObject.transform.localRotation = gameObject.transform.localRotation * Quaternion.AngleAxis(joystick.Horizontal * 150.0f * Time.deltaTime, Vector3.up);
             
         }
         
